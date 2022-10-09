@@ -20,7 +20,7 @@ Download Kafka, by running the command below:
 ```bash
 wget https://archive.apache.org/dist/kafka/2.8.0/kafka_2.12-2.8.0.tgz
 ```
-
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/1-downloading_kafka.png)
 
 Extract kafka from the zip file by running the command below.
 
@@ -28,7 +28,7 @@ Extract kafka from the zip file by running the command below.
 tar -xzf kafka_2.12-2.8.0.tgz
 ```
 
-screen 2
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/2-unziping.png)
 
 This creates a new directory 'kafka_2.12-2.8.0' in the current directory.
 
@@ -40,7 +40,7 @@ Move to the created directory and run the Zookeper
 cd kafka_2.12-2.8.0 
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
-screen 3
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/3-start-the-zoo-keeper.png)
 
 ZooKeeper, as of this version, is required for Kafka to work. ZooKeeper is responsible for the overall management of Kafka cluster. It monitors the Kafka brokers and notifies Kafka if any broker or partition goes down, or if a new broker or partition goes up.
 
@@ -52,7 +52,8 @@ cd kafka_2.12-2.8.0
 bin/kafka-server-start.sh config/server.properties
 ```
 
-screen 4
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/4-starting-broker-server.png)
+
 
 ### Create new Topic , producer and consumer:
 Now we need to create a topic before you can start to post messages.
@@ -64,7 +65,7 @@ cd kafka_2.12-2.8.0
 bin/kafka-topics.sh --create --topic news --bootstrap-server localhost:9092
 ```
 You will see the message: 'Created topic news.'
-screen 5
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/5-create-topic.png)
 
 Now we need a producer to send messages to Kafka. Run the command below to start a producer.
 
@@ -80,7 +81,7 @@ Good day
 Enjoy the Kafka lab
 ```
 
-screen 6
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/6- creating produceer and send messages.png)
 
 Now we need a consumer to read messages from kafka.
 
@@ -92,8 +93,7 @@ bin/kafka-console-consumer.sh --topic news --from-beginning --bootstrap-server l
 ```
 
 You should see all the messages you sent from the producer appear here.
-
-screen 7
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/7-cearting producer.png)
 
 You can go back to the producer terminal and type some more messages, one message per line, and you will see them appear here.
 
