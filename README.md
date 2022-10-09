@@ -93,7 +93,7 @@ bin/kafka-console-consumer.sh --topic news --from-beginning --bootstrap-server l
 ```
 
 You should see all the messages you sent from the producer appear here.
-![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/7-cearting producer.png)
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/fb5092a4373c27877ec3cba43cdb2f8086d7ba84/images/7-cearting%20producer.png)
 
 You can go back to the producer terminal and type some more messages, one message per line, and you will see them appear here.
 
