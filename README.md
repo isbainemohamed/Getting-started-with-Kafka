@@ -81,7 +81,7 @@ Good day
 Enjoy the Kafka lab
 ```
 
-![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/bb2edf4be72ee8e5ec7ce9110eb36973b487c2ce/images/6- creating produceer and send messages.png)
+![alt text](https://github.com/isbainemohamed/Getting-started-with-Kafka/blob/3d897697cd0cf1af9ca054fe4f1084b0c7f0f312/images/6-%20creating%20produceer%20and%20send%20messages.png)
 
 Now we need a consumer to read messages from kafka.
 
